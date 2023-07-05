@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itamae Sushi</title>
+
+    <!-- fonts aing-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- feather icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- my style-->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Itamae Sushi</a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <!-- <a href="#support">Support</a> -->
+        <a href="#menu">Menu</a>
+        <a href="#ramen">Ramen</a>
+        <a href="#review">Review</a>
+        <a href="#order">Order</a>
+        <a href="#team">Tim</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search-btn"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="ramen-menu"><i data-feather="menu"></i></a>
+      </div>
+      <div class="container">
+        <div class="shopping">
+          <span class="quantity"></span>
+        </div>
+        <div class="list"></div>
+      </div>
+      <div class="card">
+        <h1>card</h1>
+        <ul class="listcard"></ul>
+        <div class="checkout">
+          <div class="total">0</div>
+          <div class="closeshopping"></div>
+        </div>
+
+      </div>
+
+      <!-- search form start-->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Cari Disini...">
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+
+
+
+      <!-- search form start-->
+
+      <div class="search-active">
+        <input type="text" />
+      </div>
+    </nav>
+
+    <!--navbar end-->
+
+    <!-- hero section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          Eat <span>Sushi</span> Talk Sleep <span class="contoh">Repeat</span>
+        </h1>
+        <p>
+          Selamat datang di restoran sushi kami, tempat di mana cita rasa Jepang yang otentik dan inovasi bertemu dalam harmoni sempurna.
+        </p>
+        <a href="menu" class="cta">Beli sekarang</a>
+      </main>
+    </section>
+
+    <!-- hero section end-->
+
+    <!-- about section start-->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/3.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih <span>Sushi</span> kami?</h3>
+          <p>
+            Di sini, kami berkomitmen untuk memberikan pengalaman sushi yang tak terlupakan. Setiap hidangan kami disiapkan dengan hati-hati oleh para sushi chef berbakat, menggunakan bahan-bahan segar terbaik yang kami pilih dengan teliti.
+          </p>
+          <p>
+            Kami menggabungkan keahlian tradisional Jepang dengan sentuhan inovatif, menciptakan sushi yang unik dan menawan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section end-->
+
+    <!-- Support Section Start -->
+    <section class="support" id="support">
+      <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+    </section>
+
+    <!-- Support Section End -->
+
+    <!-- Menu Section Start-->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>
+        Selamat datang di menu spesial kami yang penuh dengan kelezatan Jepang yang autentik. Inilah sebagian dari hidangan istimewa yang kami tawarkan
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <img
+            src="img/menu/Salmon Sushi.jpg"
+            alt="Salmon Sushi"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle"> Salmon Sushi </h3>
+          <div class="ramen-starts">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="menu-card-price">IDR 15.000</p>
+        </div>
+        <div class="menu-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <img
+            src="img/menu/Tuna Salad Crispy Mentai.jpg"
+            alt="Tuna Crispy Mentai"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle"> Tuna Crispy Mentai </h3>
+          <div class="ramen-starts">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="menu-card-price">IDR 20.000</p>
+        </div>
+        <div class="menu-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <img
+            src="img/menu/Salmon Sashimi Boat.jpg"
+            alt="Salmon Sashimi Boat"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle"> Salmon Sashimi Boat </h3>
+          <div class="ramen-starts">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+          </div>
+          <p class="menu-card-price">IDR 35.000</p>
+        </div>
+        <div class="menu-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <img
+            src="img/menu/inari sushi.png"
+            alt="Inari Sushi"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle"> Inari Sushi </h3>
+          <div class="ramen-starts">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="menu-card-price">IDR 10.000</p>
+        </div>
+        <div class="menu-card">
+    
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <img
+            src="img/menu/eel nigiri.jpg"
+            alt="Spicy Hana Tori Salmon"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle"> Eel Nigiri </h3>
+          <div class="ramen-starts">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="menu-card-price">IDR 20.000</p>
+        </div>
+        <div class="menu-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <img
+            src="img/menu/ikura gunkan sushi.jpg"
+            alt="Sushi Mentai Roll"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle"> Ikura Gunkan Sushi </h3>
+          <div class="ramen-starts">
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star" class="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <p class="menu-card-price">IDR 15.000</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section End-->
+
+    <!-- Ramen Section Start-->
+    
+    <section class="ramen" id="ramen">
+      <h2><span>Menu Ramen</span> Kami</h2>
+      <p>Selamat datang di dunia kenikmatan Ramen kami, tempat rasa dan gairah bersatu menjadi satu.</p>
+      
+      <div class="row">
+        <div class="ramen-card">
+          <div class="ramen-icons">
+            <a href="#" class="item-detail-btn"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <div class="ramen-image">
+            <img src="img/ramen/miso ramen 1.png" alt="ramen 1">
+          </div>
+          <div class="ramen-content">
+            <h3>Miso Ramen</h3>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="ramen-price">IDR 25.000 <SPAN>IDR 35.000</SPAN></div>
+          </div>
+        </div>
+        <div class="ramen-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <div class="ramen-image">
+            <img src="img/ramen/Abura Soba - Cherry on my Sundae.jpg" alt="ramen 1">
+          </div>
+          <div class="ramen-content">
+            <h3>Abura Ramen</h3>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="ramen-price">IDR 30.000 <SPAN>IDR 40.000</SPAN></div>
+          </div>
+        </div>
+        <div class="ramen-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <div class="ramen-image">
+            <img src="img/ramen/Sea Urchin Tsukemen (Dipping Noodle).jpg" alt="ramen 1">
+          </div>
+          <div class="ramen-content">
+            <h3>Sea Urchin Tsukemen</h3>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="ramen-price">IDR 25.000 <SPAN>IDR 35.000</SPAN></div>
+          </div>
+        </div>
+        <div class="ramen-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <div class="ramen-image">
+            <img src="img/ramen/Shio Ramen.jpg" alt="ramen 1">
+          </div>
+          <div class="ramen-content">
+            <h3>Shio Ramen</h3>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="ramen-price">IDR 30.000 <SPAN>IDR 35.000</SPAN></div>
+          </div>
+        </div>
+        <div class="ramen-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <div class="ramen-image">
+            <img src="img/ramen/shoyu ramen.jpg" alt="ramen 1">
+          </div>
+          <div class="ramen-content">
+            <h3>Shoyu Ramen</h3>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="ramen-price">IDR 30.000 <SPAN>IDR 35.000</SPAN></div>
+          </div>
+        </div>
+        <div class="ramen-card">
+          <div class="ramen-icons">
+            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+          <div class="ramen-image">
+            <img src="img/ramen/Wakayama Ramen.jpg" alt="ramen 1">
+          </div>
+          <div class="ramen-content">
+            <h3>Wakayama Ramen</h3>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="ramen-price">IDR 35.000 <SPAN>IDR 45.000</SPAN></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Ramen Section End-->
+
+    <!-- Review Section Start -->
+    <section class="main" id="review">
+      <h2><span>Review</span></h2>
+      <p class="subheading">Bacalah cerita sukses pelanggan kami yang telah menikmati pengalaman tak terlupakan di restoran kami.</p>
+        <div class="full-boxer">
+            <div class="comment-box">
+                <div class="box-top">
+                    <div class="Profile">
+                        <div class="profile-image">
+                            <img src="img/org/1.png">
+                        </div>
+                        <div class="Name">
+                            <strong>Sophia Camila</strong>
+                            <span>@Sophia Camila</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        For the food fits perfectly on my tongue, I really like it.
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <div class="box-top">
+                    <div class="Profile">
+                        <div class="profile-image">
+                            <img src="img/org/2.png">
+                        </div>
+                        <div class="Name">
+                            <strong>Aria Dilwan</strong>
+                            <span>@Aria Dilwan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        The combination of soft rice and fresh ingredients made sushi a tempting dish for me.
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <div class="box-top">
+                    <div class="Profile">
+                        <div class="profile-image">
+                            <img src="img/org/3.png">
+                        </div>
+                        <div class="Name">
+                            <strong>Lily Rose</strong>
+                            <span>@Lily Rose</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        I love The beauty and precision in the presentation of sushi by experienced sushi chefs add aesthetic value to the dish.
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <div class="box-top">
+                    <div class="Profile">
+                        <div class="profile-image">
+                            <img src="img/org/4.png">
+                        </div>
+                        <div class="Name">
+                            <strong>Liam James Junior</strong>
+                            <span>@Liam James Junior</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        Interacting with chefs to get recommendations and watch the sushi making process can be a memorable experience for me.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    <!-- Review Section end -->
+
+    <!-- order Section -->
+    <section class="order" id="order">
+      <h2><span>Order</span> Sekarang</h2>
+      <p>Cepat dan Mudah</p>
+      <form action="">
+        <div class="inputbox">
+          <div class="input">
+            <span>your name</span>
+            <input type="text" placeholder="Masukan Nama Anda">
+        </div>
+        <div class="input">
+          <span>your number</span>
+          <input type="number" placeholder="Masukan Nomor Anda">
+        </div>
+      </div>
+        <div class="inputbox">
+          <div class="input">
+            <span>your order</span>
+            <input type="text" placeholder="Masukan menu yang anda pilih">
+        </div>
+        <div class="input">
+          <span>additional food</span>
+          <input type="test" placeholder="Tambahan Makanan">
+        </div>
+      </div>
+        <div class="inputbox">
+          <div class="input">
+            <span>How Muchr</span>
+            <input type="number" placeholder="Masukan banyaknya menu">
+        </div>
+        <div class="input">
+          <span></span>date and time
+          <input type="datetime-local" >
+        </div>
+      </div>
+      <div class="inputbox">
+        <div class="input">
+          <span>your address</span>
+          <textarea name="" placeholder="Masukan alamatmu" id="" cols="30" rows="10"></textarea>
+      </div>
+        <div class="input">
+          <span>your Massage</span>
+          <textarea name="" placeholder="Saran dan kritik" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <button id="myBtn" class="btn">Order Sekarang</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>SELAMAT!! Pembelian anda sudah tersimpan....</p>
+      </div>
+    
+    </div>
+      </form>
+    </section>
+    <section id="team" class="team-member" >
+      <h2><span>Tim</span> Kami</h2>
+      <p class="anak-anak">Perkenalkan Anggota Kami</p>
+      <div class="content" >
+        <ul class="team">
+          <li class="member co-funder">
+            <div class="thumb"><img src="img/team/ROBBY.jpeg"></div>
+            <div class="description">
+              <h3 class="nama-tim">Robby HazwaRizki Wijaya</h3>
+              <p class="paragraf">Robby adalah deveplor dan desginer sekaligus ketua dalam project ini.<br><a href=>19220865</a></p>
+            </div>
+          </li>
+          <li class="member co-funder">
+            <div class="thumb"><img src="img/team/IBNU.jpeg"></div>
+            <div class="description">
+              <h3 class="nama-tim">Ibnu Rahman Hakim</h3>
+              <p class="paragraf">Ibnu adalah designer grafis, sekaligus menjadi wakil dalam project ini.<br><a href=>19220183</a></p>
+            </div>
+          </li>
+          <li class="member">
+            <div class="thumb"><img src="img/team/FEBRI.jpeg"></div>
+            <div class="description">
+              <h3 class="nama-tim">Febri Roka Pratama</h3>
+              <p class="paragraf">Febri adalah ahli sistem analisis pasar, yang memberikan ide ide potensial untuk project ini.<br><a href=>19221032</a></p>
+            </div>
+          </li>
+          <li class="member">
+            <div class="thumb"><img src="img/team/ARDI.jpeg"></div>
+            <div class="description">
+              <h3 class="nama-tim">Adrianus Ardi Saputra</h3>
+              <p class="paragraf">Ardi merupakan bagian dari tim marketing, yang memasarkan produk produk yang di jualkan di lapangan.<br><a href=>19221166</a></p>
+            </div>
+          </li>
+          <li class="member">
+            <div class="thumb"><img src="img/team/SINGGIH.jpeg"></div>
+            <div class="description">
+              <h3 class="nama-tim">Singgih Anggara Putra</h3>
+              <p class="paragraf">Singgih merupakan bagian dari tim marketing, yang memasarkan produk produk yang di jualkan di Sosial Media<br><a href=>19221256</a></p>
+            </div>
+          </li>
+        </ul>
+      
+      </div>
+    </section>
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Kami sangat senang mendengar dari Anda! Silakan hubungi kami untuk pertanyaan, reservasi, atau hanya sekedar berbagi pengalaman Anda dengan kami. Kami siap melayani dengan senyuman dan antusiasme
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.868873794655!2d106.96945807371915!3d-6.148307360265166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698b06dbbe068b%3A0xbd3a91d3085240db!2sPS%20MAMA%20ROBBY!5e0!3m2!1sid!2sid!4v1686681650011!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="E-mail" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="number" placeholder="No. Hp" />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section End -->
+
+    <!-- Footer Section start-->
+    <footer>
+<div class="footerLeft">
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">About Us</h1>
+            <ul class="fList">
+                <a href="#"class="fListItem">Company</a>
+                <a href="#" class="fListItem">Contact</a>
+                <a href="#" class="fListItem">Careers</a>
+                <a href="#" class="fListItem">Affiliates</a>
+                <a href="#" class="fListItem">Stores</a>
+                <a href="#" class="fListItem">Team</a>
+                <a href="#" class="fListItem">Where To Buy</a>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Useful Links</h1>
+            <ul class="fList">
+                <a href="#" class="fListItem">Support</a>
+                <a href="#" class="fListItem">Refund</a>
+                <a href="#" class="fListItem">FAQ</a>
+                <a href="#" class="fListItem">Feedback</a>
+                <a href="#" class="fListItem">Stories</a>
+                <a href="#" class="fListItem">Warranty</a>
+                <a href="#" class="fListItem">Cookies Policy</a>
+            </ul>
+        </div>
+        <div class="footerMenu">
+            <h1 class="fMenuTitle">Products</h1>
+            <ul class="fList">
+                <a href="#" class="fListItem">Salmon Sushi</a>
+                <a href="#" class="fListItem">Tuna Spicy Mentai</a>
+                <a href="#" class="fListItem">Salmon Sashimi Boat</a>
+                <a href="#" class="fListItem">Inari Sushi</a>
+                <a href="#" class="fListItem">Spicy Hana Tori Salmon</a>
+                <a href="#" class="fListItem">Sushi Mentai Roll</a>
+                <a href="#" class="fListItem">Sushi Kanimayo Roll</a>
+            </ul>
+        </div>
+    </div>
+    <div class="footerRight">
+        <div class="footerRightMenu">
+            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+            <div class="fMail">
+                <input type="text" placeholder="your@email.com" class="fInput">
+                <button class="fButton">Join!</button>
+            </div>
+        </div>
+      <div class="footerRightMenu">
+        <h1 class="fMenuTitle">Follow Us</h1>
+        <div class="fIcons">
+          <a href="#" class="fIcon"><i data-feather="instagram" ></i></a>
+          <a href="#" class="fIcon"><i data-feather="twitter" ></i></a>
+          <a href="#" class="fIcon"><i data-feather="facebook"></i></a>
+          <a href="#" class="fIcon"><i data-feather="youtube" ></i></a>
+        </div>
+      </div>
+      <div class="credit">
+        <p>Created By <a href="" >Kelompok 5</a>. | &copy: 2023.</p>
+      </div>
+    </footer>
+
+    <!-- Footer Section End-->
+
+    <!-- modal boox item detail start-->
+    <!-- <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/ramen/miso ramen 1.png" alt="ramen 1">
+          <div class="ramen-content">
+            <h3>ramen 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, rerum molestiae. Ea minus quidem laboriosam aspernatur laborum adipisci officia voluptatum.</p>
+            <div class="ramen-starts">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="ramen-price">IDR 25.000 <SPAN>IDR 35.000</SPAN></div>
+            <a href="#"><i data-feather="shopping-cart"></i> <span> add to cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <!-- modal boox item detail end-->
+
+    <!-- feather icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- my javascript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
